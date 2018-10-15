@@ -1,0 +1,78 @@
+/* item-list*/
+.article-item {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #fff;
+}
+.article-item img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #ccd2e4;
+  font-size: .75rem;
+}
+.article-item .item-top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: .9375rem;
+}
+.article-item .item-top .item-left {
+  width: 5.25rem;
+  background-color: #ccd2e4;
+  margin-right: .9375rem;
+  height: 3.75rem;
+}
+.article-item .item-top .item-right {
+  flex: 1;
+  font-size: 1rem;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.article-item .item-btm {
+  font-size: .75rem;
+  color: #ccd2e4;
+  display: flex;
+  flex-direction: row;
+}
+.article-item .item-btm div {
+  display: inline-block;
+}
+.article-item .item-btm div span:nth-child(1) {
+  margin-right: 10px;
+}
+.article-item .item-btm .icon-area {
+  position: absolute;
+  right: 1.875rem;
+  text-align: center;
+}
+.article-item .item-btm .icon-area span:nth-child(1) {
+  margin-right: 2.625rem;
+}
+.article-item .item-btm .favor-icon {
+  position: relative;
+  margin-right: 1.875rem;
+}
+.article-item .item-btm .msg-icon {
+  position: relative;
+}
+.article-item .item-btm .favor-icon::before,
+.article-item .item-btm .msg-icon::before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  background: url("../../image/favor.png");
+  background-size: cover;
+  width: .75rem;
+  height: .75rem;
+  left: -0.9375rem;
+  top: .1875rem;
+}
+.article-item .item-btm .msg-icon::before {
+  background: url("../../image/comment.png");
+  background-size: cover;
+}
